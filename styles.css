@@ -1,0 +1,200 @@
+body {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  background: #f0f2f5;
+  color: #333;
+}
+
+.hero-image {
+  width: 100%;
+  height: 250px;
+  background: url('/titulo.webp') no-repeat center center;
+  background-size: cover;
+}
+
+header {
+  background: url('https://i.imgur.com/TjqDLwN.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 60px 20px 40px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  color: rgb(10, 10, 10);
+  position: relative;
+}
+
+/* Elimina overlay oscuro */
+/* header::before { ... }  -- BORRADO */
+
+header h1, header p {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+
+header h1 {
+  font-size: 3em;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+header p {
+  font-style: italic;
+  font-size: 1.2em;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+nav {
+  background-color: #1565c0;
+  padding: 12px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 18px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffeb3b;
+}
+
+main {
+  padding: 40px 20px;
+}
+
+.historia-y-valores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 900px;
+  margin: 25px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.historia {
+  flex: 1 1 50%;
+  min-width: 280px;
+}
+
+.historia h2 {
+  color: #0d47a1;
+  border-bottom: 2px solid #90caf9;
+  padding-bottom: 5px;
+}
+
+.valores {
+  flex: 1 1 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tarjeta {
+  background-color: #ffffff;
+  border: 2px solid #1565c0;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tarjeta h3 {
+  margin: 0;
+  color: #0d47a1;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.contenido {
+  margin-top: 10px;
+  display: none;
+  color: #333;
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
+.tarjeta:hover {
+  background-color: #f0f8ff;
+}
+
+.section-with-image {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  background: white;
+  margin: 25px auto;
+  padding: 25px;
+  max-width: 900px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.section-with-image img {
+  max-width: 160px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+#contacto {
+  background: white;
+  margin: 25px auto;
+  padding: 25px;
+  max-width: 900px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#contacto img {
+  max-width: 160px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#contacto-info {
+  flex: 1;
+}
+
+footer {
+  background-color: #0d47a1;
+  color: white;
+  text-align: center;
+  padding: 18px 10px;
+  font-size: 0.95em;
+  margin-top: 30px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+section a {
+  color: #1565c0;
+  text-decoration: underline;
+}
+
+section a:hover {
+  color: #0d47a1;
+}
