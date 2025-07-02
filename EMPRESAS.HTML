@@ -3,162 +3,57 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>EMPAM Sistem</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url('https://i.imgur.com/bRHPV6Q.jpg') no-repeat center center fixed;
-      background-size: cover;
-      background-blend-mode: lighten;
-      color: #333;
-    }
-
-    header {
-      background-color: rgba(255, 255, 255, 0.95);
-      padding: 20px;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    header h1 {
-      color: #1976d2;
-      font-size: 3em;
-      margin-bottom: 5px;
-    }
-
-    header p {
-      font-style: italic;
-      color: #555;
-    }
-
-    nav {
-      background-color: rgba(25, 118, 210, 0.95);
-      padding: 10px 0;
-      text-align: center;
-    }
-
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav ul li {
-      display: inline-block;
-      margin: 0 15px;
-    }
-
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav ul li a:hover {
-      color: #ffeb3b;
-    }
-
-    main {
-      padding: 30px;
-    }
-
-    section {
-      background: rgba(255, 255, 255, 0.92);
-      margin: 20px auto;
-      padding: 20px;
-      max-width: 800px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border-radius: 8px;
-    }
-
-    section h2 {
-      color: #1565c0;
-      border-bottom: 2px solid #90caf9;
-      padding-bottom: 5px;
-    }
-
-    .section-with-image {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .section-with-image img {
-      max-width: 150px;
-      border-radius: 10px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.2);
-    }
-
-    #contacto {
-      display: flex;
-      align-items: flex-start;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    #contacto img {
-      max-width: 150px;
-      border-radius: 8px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.2);
-    }
-
-    #contacto-info {
-      flex: 1;
-    }
-
-    footer {
-      background-color: #0d47a1;
-      color: white;
-      text-align: center;
-      padding: 15px 10px;
-      font-size: 0.9em;
-    }
-
-    ul li {
-      margin-bottom: 5px;
-    }
-
-    a {
-      color: #0d47a1;
-    }
-
-    section a {
-      color: #1565c0;
-      text-decoration: underline;
-    }
-
-    section a:hover {
-      color: #0d47a1;
-    }
-  </style>
+  <title>EMPAM System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
+  <!-- Imagen decorativa -->
+  <div class="hero-image"></div>
+
+  <!-- Encabezado con fondo ilustrativo -->
   <header>
-    <h1>EMPAM Sistem</h1>
+    <h1>EMPAM System</h1>
     <p>Soluciones tecnológicas que impulsan tu futuro</p>
   </header>
 
+  <!-- Menú -->
   <nav>
     <ul>
       <li><a href="#historia">Historia</a></li>
       <li><a href="#horarios">Horarios</a></li>
       <li><a href="#contacto">Contacto</a></li>
+      <li><a href="trabaja.html">Trabaja con Nosotros</a></li>
     </ul>
   </nav>
 
   <main>
-    <section id="historia" class="section-with-image">
-      <div>
+    <!-- Historia + Misión y Visión -->
+    <section id="historia-valores" class="historia-y-valores">
+      <div class="historia">
         <h2>Nuestra Historia</h2>
         <p>
-          EMPAM Sistem nació en 2010 como una startup enfocada en soluciones de software personalizadas. 
+          EMPAM System nació en 2010 como una startup enfocada en soluciones de software personalizadas. 
           A lo largo de los años, nos hemos consolidado como líderes en automatización empresarial, desarrollo web y consultoría digital. 
           Con sede en México, atendemos a empresas de todos los tamaños, brindando tecnología eficiente, ética y accesible.
         </p>
+      </div>
+
+      <div class="valores">
+        <div class="tarjeta" onclick="toggleContenido('vision')">
+          <h3>Visión</h3>
+          <p id="vision" class="contenido">
+            Ser la empresa tecnológica líder en Latinoamérica en transformación digital, destacando por soluciones innovadoras, compromiso social y excelencia operativa.
+          </p>
+        </div>
+
+        <div class="tarjeta" onclick="toggleContenido('mision')">
+          <h3>Misión</h3>
+          <p id="mision" class="contenido">
+            Brindar soluciones tecnológicas integrales que optimicen procesos, potencien negocios y acerquen el futuro digital a las empresas mediante profesionalismo, ética y compromiso humano.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -180,7 +75,7 @@
         <h2>Contacto</h2>
         <p><strong>Dirección:</strong> Calle Innovación #123, CDMX, México</p>
         <p><strong>Teléfono:</strong> +52 3346240098</p>
-        <p><strong>Email:</strong> contacto@empamsistem.com</p>
+        <p><strong>Email:</strong> contacto@empamsystem.com</p>
 
         <h3>Redes Sociales</h3>
         <ul>
@@ -193,8 +88,15 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 EMPAM Sistem. Todos los derechos reservados.</p>
+    <p>&copy; 2025 EMPAM System. Todos los derechos reservados.</p>
   </footer>
+
+  <script>
+    function toggleContenido(id) {
+      const contenido = document.getElementById(id);
+      contenido.style.display = (contenido.style.display === "block") ? "none" : "block";
+    }
+  </script>
 
 </body>
 </html>
