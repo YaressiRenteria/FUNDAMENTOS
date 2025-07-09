@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EMPAM System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="hero-image"></div>
+
+  <header>
+    <h1>EMPAM System</h1>
+    <p>Soluciones tecnológicas que impulsan tu futuro</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#historia">Historia</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#clientes">Clientes</a></li>
+      <li><a href="#cultura">Cultura</a></li>
+      <li><a href="#horarios">Horarios</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="trabaja.html">Trabaja con Nosotros</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="historia-valores" class="historia-y-valores">
+      <div class="historia">
+        <h2 id="historia">Nuestra Historia</h2>
+        <p>
+          EMPAM System nació en 2010 como una startup enfocada en soluciones de software personalizadas. 
+          A lo largo de los años, nos hemos consolidado como líderes en automatización empresarial, desarrollo web y consultoría digital. 
+          Con sede en México, atendemos a empresas de todos los tamaños, brindando tecnología eficiente, ética y accesible.
+        </p>
+
+        <p class="subrayado">
+          <u>
+            Trabajar en nuestra empresa es una experiencia enriquecedora que fomenta el crecimiento personal y profesional. 
+            Fomentamos el trabajo en equipo, el aprendizaje continuo y la participación activa en proyectos innovadores. 
+            Nuestro ambiente laboral se caracteriza por el respeto, la creatividad y la oportunidad de hacer una verdadera diferencia en el mundo digital.
+          </u>
+        </p>
+      </div>
+
+      <div class="valores">
+        <div class="tarjeta" onclick="toggleContenido('vision')">
+          <h3>Visión</h3>
+          <p id="vision" class="contenido">
+            Ser la empresa tecnológica líder en Latinoamérica en transformación digital, destacando por soluciones innovadoras, compromiso social y excelencia operativa.
+          </p>
+        </div>
+
+        <div class="tarjeta" onclick="toggleContenido('mision')">
+          <h3>Misión</h3>
+          <p id="mision" class="contenido">
+            Brindar soluciones tecnológicas integrales que optimicen procesos, potencien negocios y acerquen el futuro digital a las empresas mediante profesionalismo, ética y compromiso humano.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- NUEVAS SECCIONES CON IMAGEN A LA DERECHA -->
+    <section id="servicios" class="section-with-image tarjeta">
+      <div class="info-texto">
+        <h2>Servicios Destacados</h2>
+        <ul>
+          <li>Consultoría en Transformación Digital y Cloud</li>
+          <li>Ingeniería de Software y Desarrollo de Productos</li>
+          <li>Experiencia de Usuario (UX/UI) y Diseño Digital</li>
+          <li>Integración de IA y Automatización Empresarial</li>
+          <li>Soporte y Ciberseguridad</li>
+        </ul>
+      </div>
+      <img src="/2.jpeg" alt="Servicios EMPAM" class="info-img">
+    </section>
+
+    <section id="clientes" class="section-with-image tarjeta">
+      <div class="info-texto">
+        <h2>Algunos de Nuestros Clientes</h2>
+        <p>
+          Hemos colaborado con más de 300 empresas reconocidas, incluyendo marcas del Fortune Global 2000, ayudándolas a digitalizar sus operaciones y a lanzar nuevos productos con éxito.
+        </p>
+      </div>
+      <img src="/empam.webp" alt="Clientes EMPAM" class="info-img">
+    </section>
+
+    <section id="cultura" class="section-with-image tarjeta">
+      <div class="info-texto">
+        <h2>Cultura y Carrera</h2>
+        <p>
+          Con más de 5,000 proyectos entregados globalmente, promovemos la diversidad, aprendizaje continuo y un ambiente innovador. 
+          Somos reconocidos en Glassdoor, LinkedIn y Newsweek como un excelente lugar para trabajar.
+        </p>
+      </div>
+      <img src="/3.jpg" alt="Cultura en EMPAM" class="info-img">
+    </section>
+
+    <section id="horarios" class="section-with-image">
+      <img src="/reloj.webp" alt="Reloj de horario">
+      <div>
+        <h2>Horarios de Atención</h2>
+        <ul>
+          <li>Lunes a Viernes: 9:00 AM - 6:00 PM</li>
+          <li>Sábados: 10:00 AM - 2:00 PM</li>
+          <li>Domingos: Cerrado</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <img src="/sobre.jpg" alt="Contacto EMPAM"/>
+      <div id="contacto-info">
+        <h2>Contacto</h2>
+        <p><strong>Dirección:</strong> Calle Innovación #123, CDMX, México</p>
+        <p><strong>Teléfono:</strong> +52 3346240098</p>
+        <p><strong>Email:</strong> contacto@empamsystem.com</p>
+
+        <h3>Redes Sociales</h3>
+        <ul>
+          <li><a href="https://www.facebook.com/EPAM.Global" target="_blank">Facebook</a></li>
+          <li><a href="https://www.instagram.com/epamsystems/" target="_blank">Instagram</a></li>
+          <li><a href="https://www.glassdoor.es/Opiniones/EPAM-Systems-Opiniones-E15544.htm" target="_blank">LinkedIn</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="video-empresa" class="section-with-image">
+      <div>
+        <h2>Conoce Nuestra Empresa</h2>
+        <p>Explora nuestra cultura de trabajo, nuestras instalaciones y cómo EMPAM System transforma la tecnología en soluciones reales.</p>
+        <video width="320" height="240" controls>
+          <source src="/EPAMers from Mexico Share What It's Like to Work at EPAM.mp4" type="video/mp4">
+          Tu navegador no soporta la reproducción de video.
+        </video>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 EMPAM System. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    function toggleContenido(id) {
+      const contenido = document.getElementById(id);
+      contenido.style.display = (contenido.style.display === "block") ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>
