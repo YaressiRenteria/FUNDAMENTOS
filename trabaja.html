@@ -17,7 +17,7 @@
   </header>
 
   <main>
-    <form action="#" method="post">
+    <form id="solicitudForm" action="#" method="post">
       <label for="nombre">Nombre completo:</label>
       <input type="text" id="nombre" name="nombre" required>
 
@@ -39,6 +39,14 @@
       <button type="submit">Enviar solicitud</button>
     </form>
   </main>
+
+  <script>
+    const form = document.getElementById('solicitudForm');
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // evita el envío del formulario
+      alert('La página está en mantenimiento. Por favor, inténtalo más tarde.');
+    });
+  </script>
 
 </body>
 </html>
