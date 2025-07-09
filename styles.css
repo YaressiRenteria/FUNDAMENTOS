@@ -22,9 +22,6 @@ header {
   position: relative;
 }
 
-/* Elimina overlay oscuro */
-/* header::before { ... }  -- BORRADO */
-
 header h1, header p {
   position: relative;
   z-index: 1;
@@ -197,4 +194,36 @@ section a {
 
 section a:hover {
   color: #0d47a1;
+}
+
+/* Subrayado para cómo es trabajar en EMPAM */
+.subrayado {
+  font-weight: 500;
+  margin-top: 20px;
+  font-style: italic;
+  background-color: #e3f2fd;
+  padding: 12px;
+  border-left: 4px solid #1976d2;
+  border-radius: 6px;
+  text-decoration: underline;
+}
+
+/* Estilo para el video representativo */
+#video-empresa video {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* IMÁGENES MÁS GRANDES PARA SERVICIOS, CLIENTES Y CULTURA */
+#servicios img,
+#clientes img,
+#cultura img {
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+#servicios img:hover,
+#clientes img:hover,
+#cultura img:hover {
+  transform: scale(1.05);
 }
